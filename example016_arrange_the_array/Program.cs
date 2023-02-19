@@ -1,7 +1,18 @@
 ﻿// Упорядочить элементы массива  
 
 
-int[] array = {1, 1, 8, 4, 7, 3, 5, 2, 4, 1}; 
+// int[] array = {1, 1, 8, 4, 7, 3, 5, 2, 4, 1}; 
+Console.WriteLine("Введите количество элементов массива");
+int lengthArray = Int32.Parse(Console.ReadLine());
+int[] array = new int [lengthArray];
+
+Console.WriteLine("Введите элементы массива");
+for (int x = 0; x < array.Length; x++)
+{
+    array[x] = Int32.Parse(Console.ReadLine());
+    //Console.WriteLine(array[x]);
+}
+
 
 void PrintArr(int[] arr)
 {
