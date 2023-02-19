@@ -15,8 +15,8 @@ string text = "- Я думаю, сказал князь, улыбаясь, - ч�
 string Replace(string text, char oldSymbol, char newSymbol)
 {
     string result = String.Empty;
-    int length = text.Length;
-    for (int i  = 0; i < length; i++)
+    //int length = text.Length;
+    for (int i  = 0; i < text.Length; i++)
     {
         if (text[i] == oldSymbol) result = result + newSymbol;
         else result = result + text[i];
